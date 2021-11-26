@@ -1,0 +1,30 @@
+ls 
+ls -la 
+clear 
+pwd
+cd ~
+ls 
+cd Applications/
+ls
+cd ..
+cd Downloads/
+ls
+ls -la 
+pwd 
+cd ~/Do
+cd ~/Downloads/
+ls
+pwd 
+ls -la 
+cd ~/Desktop/
+ls
+cd ~/Downloads/
+ls
+ls -la 
+ls 
+cd Desktop/
+ls
+cd Desktop/
+ls
+cd Desktop/
+ls
