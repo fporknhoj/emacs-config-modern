@@ -28,3 +28,19 @@ cd Desktop/
 ls
 cd Desktop/
 ls
+ls 
+cd .emacs
+cd .emacs.d
+ls
+cd lisp/
+ls
+cd _themes/
+ls
+cd emacs-theme-gruvbox/
+ls
+which R 
+R
+run-ess-r-newest 
+(which r)
+$(which R)
+/usr/local/bin/R

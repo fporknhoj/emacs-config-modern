@@ -13,9 +13,13 @@
 ;; (set-face-attribute 'default nil :family "Source Code Pro" :weight 'regular :height 140)
 ;; (set-face-attribute 'default nil :family "Operator Mono Book" :weight 'regular :height 140)
 ;; (set-face-attribute 'default nil :family "Consolas" :weight 'regular :height 140)
-;(set-face-attribute 'default nil :family "Input Mono" :weight 'regular :height 120)
-(set-face-attribute 'default nil :family "Anonymous Pro" :weight 'regular :height 130)
 ;; (set-face-attribute 'default nil :family "Verdana" :weight 'regular :height 120)
+;; (set-face-attribute 'default nil :family "PragmataPro" :weight 'regular :height 140)
+;; (set-face-attribute 'default nil :family "CamingoCode" :weight 'regular :height 140)
+;; (set-face-attribute 'default nil :family "Anonymous Pro" :weight 'regular :height 140)
+;; (set-face-attribute 'default nil :family "Ubuntu Mono" :weight 'regular :height 140)
+;; (set-face-attribute 'default nil :family "Consolas" :weight 'regular :height 130)
+ (set-face-attribute 'default nil :family "Menlo" :weight 'regular :height 130)
 
 (delete-selection-mode 1)
 
@@ -39,11 +43,39 @@
      (comment-or-uncomment-region beg end))))
 
 ;;;; INTERFACE ;;;; 
+;; only remove scroll  bar in GUI emacs 
 (menu-bar-mode 0)
 (tool-bar-mode 0)
-(scroll-bar-mode 0)
+  
+(if (display-graphic-p) t
+;;  (scroll-bar-mode 0)
+)
 
-(load-theme 'solarized-light t)
+;; Custom themes 
+
+(let ((default-directory  "~/.emacs.d/lisp/"))
+  (normal-top-level-add-subdirs-to-load-path))
+
+;; (let ((basedir "~/.emacs.d/_themes/"))
+;;   (dolist (f (directory-files basedir))
+;;     (if (and (not (or (equal f ".") (equal f "..")))
+;;              (file-directory-p (concat basedir f)))
+;;         (add-to-list 'load-path (concat basedir f)))))
+;;         (add-to-list 'custom-theme-load-path (concat basedir f)))))
+
+;; (add-to-list 'load-path "~/.emacs.d/_themes/emacs-theme-gruvbox")
+;(load-theme 'gruvbox t)
+
+;; doesnt work (add-to-list 'load-path "/Users/john/.emacs.d/_themes/emacs-theme-gruvbox")
+;; doesnt work (require 'gruvbox)
+;; doesnt work (load-theme 'gruvbox t)
+
+;(load-file "~/.emacs.d/lisp/_themes/autothemer/autothemer/autothemer.el")
+;(load-file "~/.emacs.d/lisp/_themes/emacs-theme-gruvbox/gruvbox.el")
+;(load-theme 'gruvbox t)
+
+;; (load-theme 'solarized-light t)
+;; (load-theme 'solarized-dark t)
 ;; (load-theme 'sanityinc-tomorrow-day t)
 ;; (load-theme 'solarized-dark t)
 ;; (load-theme 'zenburn t)
