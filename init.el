@@ -67,13 +67,14 @@
    (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/ESS/lisp/")
    ;(load "ess-autoloads")
    (require 'ess-site)
-   (if (eq system-type 'darwin)
-     (setq inferior-ess-r-program "/usr/local/bin/R"))
+   ;(if (eq system-type 'darwin)
+   ;  (setq inferior-ess-r-program "/usr/local/bin/R"))
 
  ; use the right path
-   ;(when (eq system-type 'darwin)
-   ;  (exec-path-from-shell-initialize))
-   ;(exec-path-from-shell-copy-env "PATH")
+   (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/exec-path-from-shell/")
+   (require 'exec-path-from-shell) ;(load "exec-path-from-shell.el")
+   (when (eq system-type 'darwin)
+     (exec-path-from-shell-initialize))
 
  ; sql indent
 
@@ -93,8 +94,10 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    '("fee7287586b17efbfda432f05539b58e86e059e78006ce9237b8732fde991b4c" "830877f4aab227556548dc0a28bf395d0abe0e3a0ab95455731c9ea5ab5fe4e1" default))
- '(exec-path
-   '("/usr/local/bin" "/usr/bin" "/bin" "/usr/sbin" "/sbin" "/Applications/Emacs.app/Contents/MacOS/bin-x86_64-10_14" "/Applications/Emacs.app/Contents/MacOS/libexec-x86_64-10_14" "/Applications/Emacs.app/Contents/MacOS/libexec" "/Applications/Emacs.app/Contents/MacOS/bin")))
+ ;'(exec-path
+ ;  '("/usr/local/bin" "/usr/bin" "/bin" "/usr/sbin" "/sbin" "/Applications/Emacs.app/Contents/MacOS/bin-x86_64-10_14" "/Applications/Emacs.app/Contents/MacOS/libexec-x86_64-10_14" "/Applications/Emacs.app/Contents/MacOS/libexec" "/Applications/Emacs.app/Contents/MacOS/bin"))
+ ;'(package-selected-packages '(exec-path-from-shell))
+ )
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
