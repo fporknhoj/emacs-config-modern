@@ -44,3 +44,5 @@ run-ess-r-newest
 (which r)
 $(which R)
 /usr/local/bin/R
+echo $PATH
+which python
