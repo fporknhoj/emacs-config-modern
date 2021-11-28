@@ -7,10 +7,10 @@
  ; overwrite mode
    (delete-selection-mode 1)
  ; mouse wheel scrolling
-   (setq mouse-wheel-progressive-speed 0)
+   (setq mouse-wheel-progressive-speed nil)
  ; word wrap 
-   (setq-default truncate-lines 0)
-   (setq-default visual-line-mode 1)
+   (setq-default truncate-lines nil)
+   (setq-default visual-line-mode t)
  ; commenting 
    (global-set-key (kbd "C-?") (lambda () 
     (interactive)
@@ -22,15 +22,15 @@
  ; window titles 
    (setq frame-title-format "%b")
  ; remove scroll bar (in GUI mode only)
-   (if (display-graphic-p) 1
-     (scroll-bar-mode 0)
+   (if (display-graphic-p) t
+   ;;  (scroll-bar-mode 0)
    ) 
  ; remove tool bar 
    (tool-bar-mode 0)
  ; remove menu bar 
    (menu-bar-mode 0)
  ; inhibit startup screen 
-   (setq inhibit-startup-screen 1)
+   (setq inhibit-startup-screen t)
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Themes and Plugins
@@ -41,19 +41,18 @@
  ; Autothemer (req by some plugins)
 
  ; Solarized
-   (add-to-list 'load-path "~/.emacs.d/lisp/_themes/solarized-emacs/")
-   (require 'cl-lib)
-   (require 'color)
-   (require 'solarized-faces)
-   ;(load-theme 'solarized-dark)
-   (require 'solarized-dark-theme)
+   ;(add-to-list 'load-path "~/.emacs.d/lisp/_themes/solarized-emacs/")
+   ;(require 'cl-lib)
+   ;(require 'color)
+   ;(require 'solarized-faces)
+   ;(require 'solarized-dark-theme)
 
  ; Gruvbox
-   ;(add-to-list 'load-path "~/.emacs.d/lisp/_themes/autothemer/")
-   ;(add-to-list 'load-path "~/.emacs.d/lisp/_plugins/dash.el/")
-   ;(add-to-list 'load-path "~/.emacs.d/lisp/_themes/emacs-theme-gruvbox/")
-   ;(require 'gruvbox-theme)
-   ;(load-theme 'gruvbox 1)
+   (add-to-list 'load-path "~/.emacs.d/lisp/_themes/autothemer/")
+   (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/dash.el/")
+   (add-to-list 'load-path "~/.emacs.d/lisp/_themes/emacs-theme-gruvbox/")
+   (require 'gruvbox-theme)
+   (load-theme 'gruvbox t)
 
  ; Multiple Cursors
    (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/multiple-cursors.el/")
