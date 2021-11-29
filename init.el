@@ -102,6 +102,9 @@
      (local-set-key (kbd "C-c i h") 'octave-hide-process-buffer)
      (local-set-key (kbd "C-c i k") 'octave-kill-process))
    (add-hook 'octave-mode-hook 'my-octave-mode-hook)
+
+ ; Fix Python.el
+   (setq python-shell-interpreter "python3")
    
 ;; end 
 (custom-set-variables
