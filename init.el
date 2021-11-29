@@ -105,8 +105,18 @@
 
  ; Fix Python.el
    (setq python-shell-interpreter "python3")
-   
+
+ ; SQL Format 
+   (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/sqlformat/")
+   (require 'sqlformat)
+   (setq sqlformat-command 'pgformatter)
+   (setq sqlformat-args '("-s2" "-g"))
+   ;(add-hook 'sql-mode-hook 'sqlformat-on-save-mode)
+
+
 ;; end 
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
