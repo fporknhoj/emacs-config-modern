@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+	end-of-visual-line
 	ess-smart-comma
 	ess-yank
 	kill-region

@@ -31,6 +31,8 @@
    (menu-bar-mode 0)
  ; inhibit startup screen 
    (setq inhibit-startup-screen 1)
+ ; disable annoying bell
+   (setq ring-bell-function 'ignore)
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Themes and Plugins
@@ -45,15 +47,15 @@
       (require 'cl-lib)
       (require 'color)
       (require 'solarized-faces)
-      (require 'solarized-dark-theme))
+      (require 'solarized-dark-theme)
    ;; Gruvbox
      ;(add-to-list 'load-path "~/.emacs.d/lisp/_themes/autothemer/")
      ;(add-to-list 'load-path "~/.emacs.d/lisp/_plugins/dash.el/")
      ;(add-to-list 'load-path "~/.emacs.d/lisp/_themes/emacs-theme-gruvbox/")
      ;(require 'gruvbox-theme)
      ;(load-theme 'gruvbox 1)
- ) 
-
+     )
+  ) 
 
  ; Multiple Cursors
    (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/multiple-cursors.el/")
@@ -76,8 +78,6 @@
    (when (eq system-type 'darwin)
      (exec-path-from-shell-initialize))
 
- ; sql indent
-
  ; ssh.el
    (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/ssh-el")
    (require 'ssh)
@@ -86,6 +86,23 @@
                (setq ssh-directory-tracking-mode t)
                (shell-dirtrack-mode t)
                (setq dirtrackp nil)))
+
+ ; Octave Key Bindings
+   ;(eval-after-load "octave-mode"
+   ;  '(progn
+   ;     (
+   ;     (define-key  (kbd "C-c i l") (octave-send-line))
+
+   (defun my-octave-mode-hook ()
+     (local-set-key (kbd "C-c i l") 'octave-send-line)
+     (local-set-key (kbd "C-c i b") 'octave-send-block)
+     (local-set-key (kbd "C-c i f") 'octave-send-defun)
+     (local-set-key (kbd "C-c i r") 'octave-send-region)
+     (local-set-key (kbd "C-c i s") 'octave-show-process-buffer)
+     (local-set-key (kbd "C-c i h") 'octave-hide-process-buffer)
+     (local-set-key (kbd "C-c i k") 'octave-kill-process))
+   (add-hook 'octave-mode-hook 'my-octave-mode-hook)
+   
 ;; end 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
