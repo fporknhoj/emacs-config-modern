@@ -106,12 +106,12 @@
  ; Fix Python.el
    (setq python-shell-interpreter "python3")
 
- ; SQL Format 
-   (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/sqlformat/")
-   (require 'sqlformat)
-   (setq sqlformat-command 'pgformatter)
-   (setq sqlformat-args '("-s2" "-g"))
-   ;(add-hook 'sql-mode-hook 'sqlformat-on-save-mode)
+ ; SQL Format (requires external formatter like pgformat, will add later)
+   ;(add-to-list 'load-path "~/.emacs.d/lisp/_plugins/sqlformat/")
+   ;(require 'sqlformat)
+   ;(setq sqlformat-command 'pgformatter)
+   ;(setq sqlformat-args '("-s2" "-g"))
+   ;;(add-hook 'sql-mode-hook 'sqlformat-on-save-mode)
 
 
 ;; end 
