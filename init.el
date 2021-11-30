@@ -3,7 +3,8 @@
  ; buffer management 
    (global-set-key (kbd "C-x C-b") 'ibuffer)
  ; Font
-   (set-face-attribute 'default nil :family "Menlo" :weight 'regular :height 130)
+   (setq fnt "M+ 1mn")  ; "Optima") ; "Menlo")
+   (set-face-attribute 'default nil :family fnt :weight 'regular :height 130)
  ; overwrite mode
    (delete-selection-mode 1)
  ; mouse wheel scrolling
@@ -33,6 +34,8 @@
    (setq inhibit-startup-screen 1)
  ; disable annoying bell
    (setq ring-bell-function 'ignore)
+ ; desktop save mode (session saver?)
+   (desktop-save-mode 1)
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Themes and Plugins
