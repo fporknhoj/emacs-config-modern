@@ -3,12 +3,15 @@
  ; buffer management 
    (global-set-key (kbd "C-x C-b") 'ibuffer)
  ; Font
-   (setq fnt "M+ 1mn")  ; "Optima") ; "Menlo")
+   (setq fnt "Fantasque Sans Mono") ;"Nitti") ;"M+ 1mn")  ;"Optima") ;"Menlo")
    (set-face-attribute 'default nil :family fnt :weight 'regular :height 130)
  ; overwrite mode
    (delete-selection-mode 1)
- ; mouse wheel scrolling
+ ; make scrolling less annoying
    (setq mouse-wheel-progressive-speed 0)
+   (custom-set-variables
+    '(scroll-conservatively 1000)
+    '(scroll-margin 3))
  ; word wrap 
    (setq-default truncate-lines 0)
    (setq-default visual-line-mode 1)
@@ -24,8 +27,7 @@
    (setq frame-title-format "%b")
  ; remove scroll bar (in GUI mode only)
    (if (display-graphic-p)
-     (scroll-bar-mode 0)
-   ) 
+     (scroll-bar-mode 0)) 
  ; remove tool bar 
    (tool-bar-mode 0)
  ; remove menu bar 
@@ -70,8 +72,8 @@
 
  ; ess 
    (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/ESS/lisp/")
-   ;(load "ess-autoloads")
    (require 'ess-site)
+   ;(load "ess-autoloads")
    ;(if (eq system-type 'darwin)
    ;  (setq inferior-ess-r-program "/usr/local/bin/R"))
 
@@ -114,7 +116,7 @@
    ;(require 'sqlformat)
    ;(setq sqlformat-command 'pgformatter)
    ;(setq sqlformat-args '("-s2" "-g"))
-   ;;(add-hook 'sql-mode-hook 'sqlformat-on-save-mode)
+   ;(add-hook 'sql-mode-hook 'sqlformat-on-save-mode)
 
 
 ;; end 
