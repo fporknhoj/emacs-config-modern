@@ -3,8 +3,8 @@
  ; buffer management 
    (global-set-key (kbd "C-x C-b") 'ibuffer)
  ; Font
-   (setq fnt "Fantasque Sans Mono") ;"Nitti") ;"M+ 1mn")  ;"Optima") ;"Menlo")
-   (set-face-attribute 'default nil :family fnt :weight 'regular :height 130)
+   (setq fnt "Input") ;"IBM Plex Mono") ;"Helvetica") ;"Fantasque Sans Mono") ;"Nitti") ;"M+ 1mn")  ;"Optima") ;"Menlo")
+   (set-face-attribute 'default nil :family fnt :weight 'regular :height 120)
  ; overwrite mode
    (delete-selection-mode 1)
  ; make scrolling less annoying
