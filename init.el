@@ -3,7 +3,7 @@
  ; buffer management 
    (global-set-key (kbd "C-x C-b") 'ibuffer)
  ; Font
-   (setq fnt "Input") ;"IBM Plex Mono") ;"Helvetica") ;"Fantasque Sans Mono") ;"Nitti") ;"M+ 1mn")  ;"Optima") ;"Menlo")
+   (setq fnt "Input Mono") ;"IBM Plex Mono") ;"Helvetica") ;"Fantasque Sans Mono") ;"Nitti") ;"M+ 1mn")  ;"Optima") ;"Menlo")
    (set-face-attribute 'default nil :family fnt :weight 'regular :height 120)
  ; overwrite mode
    (delete-selection-mode 1)
