@@ -29,7 +29,7 @@
    (if (display-graphic-p)
      (scroll-bar-mode 0)) 
  ; remove tool bar 
-   (tool-bar-mode 0)
+   ;(tool-bar-mode 0)
  ; remove menu bar 
    (menu-bar-mode 0)
  ; inhibit startup screen 
