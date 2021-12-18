@@ -1,0 +1,3 @@
+[submodule "lisp/_plugins/ESS"]
+	path = lisp/_plugins/ESS
+	url = https://github.com/emacs-ess/ESS
