@@ -16,3 +16,6 @@
 [submodule "lisp/_plugins/lisp/_plugins/exec-path-from-shell"]
 	path = lisp/_plugins/lisp/_plugins/exec-path-from-shell
 	url = https://github.com/purcell/exec-path-from-shell
+[submodule "lisp/_plugins/multiple-cursors.el"]
+	path = lisp/_plugins/multiple-cursors.el
+	url = https://github.com/emacsmirror/multiple-cursors
