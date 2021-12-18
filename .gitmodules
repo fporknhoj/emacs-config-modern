@@ -1,3 +1,18 @@
 [submodule "lisp/_plugins/ESS"]
 	path = lisp/_plugins/ESS
 	url = https://github.com/emacs-ess/ESS
+[submodule "lisp/_plugins/lisp/_plugins/dash.el"]
+	path = lisp/_plugins/lisp/_plugins/dash.el
+	url = https://github.com/magnars/dash.el
+[submodule "lisp/_plugins/lisp/_plugins/multiple-cursors.el"]
+	path = lisp/_plugins/lisp/_plugins/multiple-cursors.el
+	url = https://github.com/magnars/multiple-cursors.el
+[submodule "lisp/_plugins/lisp/_plugins/ssh-el"]
+	path = lisp/_plugins/lisp/_plugins/ssh-el
+	url = https://github.com/ieure/ssh-el
+[submodule "lisp/_plugins/lisp/_plugins/sqlformat"]
+	path = lisp/_plugins/lisp/_plugins/sqlformat
+	url = https://github.com/purcell/sqlformat
+[submodule "lisp/_plugins/lisp/_plugins/exec-path-from-shell"]
+	path = lisp/_plugins/lisp/_plugins/exec-path-from-shell
+	url = https://github.com/purcell/exec-path-from-shell
