@@ -3,7 +3,7 @@
  ; buffer management 
    (global-set-key (kbd "C-x C-b") 'ibuffer)
  ; Font
-   (setq fnt "Menlo") ;"Source Code Pro") ;"Input Mono") ;"IBM Plex Mono") ;"Helvetica") ;"Fantasque Sans Mono") ;"Nitti") ;"M+ 1mn")  ;"Optima") ;"Menlo")
+   (setq fnt "Atkinson Hypermono")
    (set-face-attribute 'default nil :family fnt :weight 'regular :height 130)
  ; overwrite mode
    (delete-selection-mode 1)
@@ -26,9 +26,10 @@
  ; window titles 
    (setq frame-title-format "%b")
  ; remove scroll bar (in GUI mode only)
-   (if (display-graphic-p)
-     (scroll-bar-mode 0)) 
- ; remove tool bar 
+   (when (display-graphic-p)
+     (tool-bar-mode -1)
+     (scroll-bar-mode -1))
+ ; remove tool bar
    ;(tool-bar-mode 0)
  ; remove menu bar 
    (menu-bar-mode 0)
@@ -36,6 +37,10 @@
    (setq inhibit-startup-screen 1)
  ; disable annoying bell
    (setq ring-bell-function 'ignore)
+ ; set tab key to 2 spaces
+   (setq-default indent-tabs-mode 0)
+   (setq-default tab-width 2)
+   (setq indent-line-function 'insert-tab)
  ; desktop save mode (session saver?)
    (desktop-save-mode 1)
 
@@ -118,6 +123,10 @@
    ;(setq sqlformat-args '("-s2" "-g"))
    ;(add-hook 'sql-mode-hook 'sqlformat-on-save-mode)
 
+ ; dockerfile mode 
+   (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/dockerfile-mode/")
+   (require 'dockerfile-mode)
+   (setq dockerfile-mode-command "podman")
 
 ;; end 
 

@@ -16,3 +16,6 @@
 [submodule "lisp/_plugins/exec-path-from-shell"]
 	path = lisp/_plugins/exec-path-from-shell
 	url = https://github.com/purcell/exec-path-from-shell
+[submodule "lisp/_plugins/dockerfile-mode"]
+	path = lisp/_plugins/dockerfile-mode
+	url = https://github.com/spotify/dockerfile-mode
