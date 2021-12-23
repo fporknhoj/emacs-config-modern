@@ -2,21 +2,69 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Wed Dec 22 11:25:46 2021
+;; Created Wed Dec 22 18:00:19 2021
 ;; Desktop file format version 208
 ;; Emacs version 27.2
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (25027 24474 388800 0) (desktop . "208") "john@RMBP.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-Atkinson Hypermono-normal-normal-normal-*-13-*-*-*-p-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#839496") (background-color . "#002b36") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (ns-appearance . unbound) (ns-transparent-titlebar . unbound) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (fullscreen) (display-type . color) (background-mode . dark) (cursor-color . "black") (environment) (modeline . t) (unsplittable) (tab-bar-lines . 0) (frameset--id . "89AB-D02C-AD1F-E532") (frameset--mini t . t) (display . "RMBP.local") (icon-name) (visibility . t) (explicit-name) (tool-bar-position . top) (last-focus-update) (height . 42) (width . 89) (left . 492) (top . 277)) ((min-height . 4) (min-width . 10) (min-height-ignore . 3) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 60) (min-pixel-width . 80) (min-pixel-height-ignore . 45) (min-pixel-width-ignore . 32) (min-pixel-height-safe . 15) (min-pixel-width-safe . 16)) leaf (pixel-width . 728) (pixel-height . 615) (total-width . 91) (total-height . 41) (normal-height . 1.0) (normal-width . 1.0) (buffer "init.el" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1368) (start . 1088)) (prev-buffers ("config.fish" 1136 1720) ("Containerfile" 1 118) ("init.el" 590 1412) ("Containerfile-ssh" 1 522) ("podman-x-ssh" 1 225) ("*scratch*" 1 1) ("SiteSecurityServiceState.txt" 1 1652))))])
+(setq desktop-saved-frameset [frameset 1 (25027 48147 11349 0) (desktop . "208") "john@RMBP.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-Atkinson Hypermono-normal-normal-normal-*-13-*-*-*-p-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#839496") (background-color . "#002b36") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (ns-appearance . unbound) (ns-transparent-titlebar . unbound) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (fullscreen) (display-type . color) (background-mode . dark) (cursor-color . "black") (environment) (modeline . t) (unsplittable) (tab-bar-lines . 0) (frameset--id . "89AB-D02C-AD1F-E532") (frameset--mini t . t) (display . "RMBP.local") (icon-name) (visibility . t) (explicit-name) (tool-bar-position . top) (last-focus-update) (height . 62) (width . 89) (left . 476) (top . 37)) ((min-height . 8) (min-width . 10) (min-height-ignore . 6) (min-width-ignore . 4) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 120) (min-pixel-width . 80) (min-pixel-height-ignore . 90) (min-pixel-width-ignore . 32) (min-pixel-height-safe . 30) (min-pixel-width-safe . 16)) vc (pixel-width . 728) (pixel-height . 915) (total-width . 91) (total-height . 61) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 728) (pixel-height . 528) (total-width . 91) (total-height . 35) (normal-height . 0.5714285714285714) (normal-width . 1.0) (buffer "red.py" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 842) (start . 220)) (prev-buffers ("py-reddit" 1 290) (".git" 1 190) ("Containerfile" 1 118) ("init.el" 1088 1368) ("config.fish" 1136 1720) ("Containerfile-ssh" 1 522) ("podman-x-ssh" 1 225) ("*scratch*" 1 1) ("SiteSecurityServiceState.txt" 1 1652))) (leaf (last . t) (pixel-width . 728) (pixel-height . 387) (total-width . 91) (total-height . 26) (normal-height . 0.42857142857142855) (normal-width . 1.0) (buffer "*Python*" (selected) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 496) (start . 1)))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring '(#("psu.eud" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("if exists friendly" 0 18 (isearch-regexp-function nil isearch-case-fold-search t)) #("friendly" 0 8 (isearch-regexp-function nil isearch-case-fold-search t)) #("virtual_table_id" 0 16 (isearch-case-fold-search t isearch-regexp-function nil)) #("xref" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("virtual_table " 0 14 (isearch-regexp-function nil isearch-case-fold-search t)) #("virtual table" 0 13 (isearch-regexp-function nil isearch-case-fold-search t))))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("~/.config/fish/config.fish" "~/podman-x-ssh/Containerfile" "~/podman-x-ssh/Containerfile-ssh" "~/.emacs.d/init.el" "~/podman-x-ssh/" "~/.emacs.d/init.el" "~/.emacs.d/" "~/octave-1.octave" "~/work-cnvr/SQL/DRM-io-to-virtual-table.sql" "~/.emacs.d/init.el" "~/visible-helen-chat-1.txt" "~/work-cnvr/SQL/pa-cand-jk.sql" "~/work-cnvr/" "~/.emacs.d/init.el"))
+(setq file-name-history '("~/Documents/Code/py-reddit/" "/Users/john/work-cnvr/Projects/CSF/csf-valid/csf-valid.py" "'/Users/john/work-cnvr/Projects/CSF/csf-valid/csf-valid.py'" "~/.config/fish/config.fish" "~/podman-x-ssh/Containerfile" "~/podman-x-ssh/Containerfile-ssh" "~/.emacs.d/init.el" "~/podman-x-ssh/" "~/.emacs.d/init.el" "~/.emacs.d/" "~/octave-1.octave" "~/work-cnvr/SQL/DRM-io-to-virtual-table.sql" "~/.emacs.d/init.el" "~/visible-helen-chat-1.txt" "~/work-cnvr/SQL/pa-cand-jk.sql" "~/work-cnvr/" "~/.emacs.d/init.el"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/Users/john/Documents/Code/py-reddit/red.py"
+  "red.py"
+  'python-mode
+  '(visual-line-mode eldoc-mode)
+  842
+  '(774 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 25027 48049 590563 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (670 119))))
+
+(desktop-create-buffer 208
+  nil
+  "py-reddit"
+  'dired-mode
+  '(visual-line-mode)
+  290
+  '(nil nil)
+  t
+  '("/Users/john/Documents/Code/py-reddit/")
+  '((buffer-display-time 25027 47997 270959 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  nil
+  ".git"
+  'dired-mode
+  '(visual-line-mode)
+  190
+  '(nil nil)
+  t
+  '("/Users/john/Documents/Code/py-reddit/.git/")
+  '((buffer-display-time 25027 47993 772396 0))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/john/podman-x-ssh/Containerfile"
+  "Containerfile"
+  'dockerfile-mode
+  '(visual-line-mode)
+  118
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 25027 47984 353081 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
 (desktop-create-buffer 208
   "/Users/john/.emacs.d/init.el"
   "init.el"
@@ -26,7 +74,7 @@
   '(1302 nil)
   nil
   nil
-  '((buffer-display-time 25027 24427 674056 0) (buffer-file-coding-system . prefer-utf-8-unix))
+  '((buffer-display-time 25027 45519 984680 0) (buffer-file-coding-system . prefer-utf-8-unix))
   '((mark-ring (1412 4418 4417 4316 2795 989 187 1069 1092 1069 1067))))
 
 (desktop-create-buffer 208
@@ -40,18 +88,6 @@
   nil
   '((buffer-display-time 25027 24116 893163 0) (buffer-file-coding-system . undecided-unix) (truncate-lines))
   '((mark-ring (1608 471 1631 1715))))
-
-(desktop-create-buffer 208
-  "/Users/john/podman-x-ssh/Containerfile"
-  "Containerfile"
-  'dockerfile-mode
-  '(visual-line-mode)
-  118
-  '(nil nil)
-  nil
-  nil
-  '((buffer-display-time 25027 23992 979932 0) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring nil)))
 
 (desktop-create-buffer 208
   "/Users/john/podman-x-ssh/Containerfile-ssh"

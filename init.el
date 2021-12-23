@@ -1,5 +1,5 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Add/Modify keyboard shortcuts / interaction methods 
+;; Add/Modify keyboard shortcuts / interaction methods
  ; buffer management 
    (global-set-key (kbd "C-x C-b") 'ibuffer)
  ; Font
@@ -128,8 +128,21 @@
    (require 'dockerfile-mode)
    (setq dockerfile-mode-command "podman")
 
-;; end 
+ ; center line mode 
+   (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/centered-cursor-mode/")
+	 (require 'centered-cursor-mode)
 
+   (define-global-minor-mode my-global-centered-cursor-mode centered-cursor-mode
+     (lambda ()
+       (when (not (memq major-mode
+                        (list 'Info-mode 'term-mode 'eshell-mode 'shell-mode 'erc-mode)))
+         (centered-cursor-mode))))
+   (my-global-centered-cursor-mode 1)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; end 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
