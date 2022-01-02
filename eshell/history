@@ -46,3 +46,18 @@ $(which R)
 /usr/local/bin/R
 echo $PATH
 which python
+chmod +x asdf.sh 
+cd ~/Library/LaunchAgents/
+ll
+mv org.necho.bu ~/.Trash/
+LL
+mv org.necho.bu.plist ~/.Trash/
+ll
+launchctl unload org.necho.crontrial.plist 
+launchctl list 
+launchctl list | grep -v "apple"
+ll
+launchctl load org.necho.brew_upg.plist 
+launchctl load org.necho.brew_upg.plist 
+launchctl list 
+launchctl list | grep org

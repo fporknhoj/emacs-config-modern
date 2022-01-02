@@ -22,3 +22,9 @@
 [submodule "lisp/_plugins/centered-cursor-mode"]
 	path = lisp/_plugins/centered-cursor-mode
 	url = https://github.com/emacsmirror/centered-cursor-mode
+[submodule "lisp/_plugins/inf-ruby"]
+	path = lisp/_plugins/inf-ruby
+	url = https://github.com/nonsequitur/inf-ruby
+[submodule "lisp/_plugins/enhanced-ruby-mode"]
+	path = lisp/_plugins/enhanced-ruby-mode
+	url = https://github.com/zenspider/enhanced-ruby-mode

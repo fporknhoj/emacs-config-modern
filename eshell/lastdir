@@ -1,5 +1,4 @@
 /Users/john/Applications
-/Users/john
 /Users/john/Downloads
 /Users/john/Downloads
 /Users/john/Desktop
@@ -13,5 +12,6 @@
 /Users/john/.emacs.d/lisp
 /Users/john/.emacs.d/lisp/_themes
 /Users/john/.emacs.d/lisp/_themes/emacs-theme-gruvbox
-/Users/john
 ~/.emacs.d/lisp/_plugins/ssh-el
+/Users/john
+/Users/john/Library/LaunchAgents
