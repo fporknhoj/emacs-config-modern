@@ -3,9 +3,8 @@
 ;; buffer management 
    (global-set-key (kbd "C-x C-b") 'ibuffer)
 ;; Font
-   (setq fnt "Atkinson Hypermono")
-  ;;(setq fnt "SAS Monospace")
-   (set-face-attribute 'default nil :family fnt :weight 'regular :height 130)
+   (setq fnt "Anka/Coder") ;"Source Code Pro") ;; "ProggyVector") ;;"Inconsolata")   ;;(setq fnt "ProggyVector") ;"Anonymous Pro") ;;"Atkinson Hypermono")
+   (set-face-attribute 'default nil :family fnt :weight 'regular :height 140)
 ;; overwrite mode
    (delete-selection-mode 1)
 ;; make scrolling less annoying
@@ -42,7 +41,8 @@
        (require 'cl-lib)
        (require 'color)
        (require 'solarized-faces)
-       (require 'solarized-dark-theme)
+       ;;(require 'solarized-dark-theme)
+			 (require 'solarized-light-theme)
    ;; Gruvbox
       ;;(add-to-list 'load-path "~/.emacs.d/lisp/_themes/autothemer/")
       ;;(add-to-list 'load-path "~/.emacs.d/lisp/_plugins/dash.el/")
