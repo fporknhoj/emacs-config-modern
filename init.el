@@ -3,7 +3,14 @@
 ;; buffer management
    (global-set-key (kbd "C-x C-b") 'ibuffer)
 ;; Font
-   (setq fnt "PT Mono";  "Anka/Coder") ;"Source Code Pro") ;; "ProggyVector") ;;"Inconsolata")   ;;(setq fnt "ProggyVector") ;"Anonymous Pro") ;;"Atkinson Hypermono")
+   (setq fnt "Anka/Coder"
+      ;; "IBM Plex Mono"
+   		;; "PT Mono"
+   		;; "Source Code Pro"
+   		;; "ProggyVector"
+   		;; "Inconsolata"
+   		;;"Atkinson Hypermono"
+      )
    (set-face-attribute 'default nil :family fnt :weight 'regular :height 140)
 ;; overwrite mode
    (delete-selection-mode 1)
