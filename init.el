@@ -3,7 +3,8 @@
 ;; buffer management
    (global-set-key (kbd "C-x C-b") 'ibuffer)
 ;; Font
-   (setq fnt "Anka/Coder"
+   (setq fnt "SF Mono"
+      ;; "Anka/Coder"
       ;; "IBM Plex Mono"
    		;; "PT Mono"
    		;; "Source Code Pro"
@@ -11,7 +12,7 @@
    		;; "Inconsolata"
    		;;"Atkinson Hypermono"
       )
-   (set-face-attribute 'default nil :family fnt :weight 'regular :height 140)
+   (set-face-attribute 'default nil :family fnt :weight 'regular :height 130)
 ;; overwrite mode
    (delete-selection-mode 1)
 ;; make scrolling less annoying
