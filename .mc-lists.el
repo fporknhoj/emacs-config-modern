@@ -3,14 +3,15 @@
 
 (setq mc/cmds-to-run-for-all
       '(
-	end-of-visual-line
-	ess-smart-comma
-	ess-yank
-	kill-region
-	org-self-insert-command
-	))
+				end-of-visual-line
+				ess-smart-comma
+				ess-yank
+				kill-region
+				org-self-insert-command
+				))
 
 (setq mc/cmds-to-run-once
       '(
-	help-for-help
-	))
+				ccm-mwheel-scroll
+				help-for-help
+				))
