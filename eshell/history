@@ -61,3 +61,15 @@ launchctl load org.necho.brew_upg.plist
 launchctl load org.necho.brew_upg.plist 
 launchctl list 
 launchctl list | grep org
+ls 
+ls -la
+ll
+ll
+git
+cd .emacs.d/lisp/_themes/
+ll
+cd solarized-emacs/
+ll
+git submodule add . 
+git submodule add
+multipass 

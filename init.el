@@ -13,7 +13,7 @@
    		;; "Inconsolata"
    		;;"Atkinson Hypermono"
       )
-   (set-face-attribute 'default nil :family fnt :weight 'regular :height 130)
+   (set-face-attribute 'default nil :family fnt :weight 'regular :height 120)
 ;; overwrite mode
    (delete-selection-mode 1)
 ;; make scrolling less annoying

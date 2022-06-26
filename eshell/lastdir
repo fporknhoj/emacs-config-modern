@@ -7,11 +7,12 @@
 /Users/john/Desktop
 /Users/john/Desktop
 /Users/john/Desktop
-~
 /Users/john/.emacs.d
 /Users/john/.emacs.d/lisp
-/Users/john/.emacs.d/lisp/_themes
 /Users/john/.emacs.d/lisp/_themes/emacs-theme-gruvbox
 ~/.emacs.d/lisp/_plugins/ssh-el
 /Users/john
 /Users/john/Library/LaunchAgents
+~
+/Users/john/.emacs.d/lisp/_themes
+/Users/john/.emacs.d/lisp/_themes/solarized-emacs
