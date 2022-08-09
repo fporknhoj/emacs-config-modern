@@ -3,7 +3,8 @@
 ;; buffer management
    (global-set-key (kbd "C-x C-b") 'ibuffer)
 ;; Font
-   (setq fnt "Monaco" 
+   (setq fnt "IBM Plex Mono"
+			;; "Monaco" 
 			;; "SF Mono"
       ;; "Anka/Coder"
       ;; "IBM Plex Mono"
