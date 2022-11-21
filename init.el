@@ -48,12 +48,18 @@
        (require 'solarized-faces)
        ;;(require 'solarized-dark-theme)
 			 (require 'solarized-light-theme)
+      )
    ;; Gruvbox
       ;;(add-to-list 'load-path "~/.emacs.d/lisp/_themes/autothemer/")
       ;;(add-to-list 'load-path "~/.emacs.d/lisp/_plugins/dash.el/")
       ;;(add-to-list 'load-path "~/.emacs.d/lisp/_themes/emacs-theme-gruvbox/")
       ;;(require 'gruvbox-theme)
       ;;(load-theme 'gruvbox 1)
+  ;; Tomorrow
+      (progn (add-to-list 'load-path "~/.emacs.d/lisp/_themes/tomorrow/")
+        (require 'tomorrow-night-eighties-theme)
+       ;;(require 'solarized-dark-theme)
+       ;;(require 'solarized-light-theme)
       )
    )
 
