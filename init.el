@@ -3,13 +3,12 @@
 ;; buffer management
    (global-set-key (kbd "C-x C-b") 'ibuffer)
 ;; Font
-   (setq fnt "Courier Prime Sans" 
+   (setq fnt "ProggyVector" 
+      ;;"Spot Mono"
       ;; "Input Sans"
-   		;; "ProggyVector"
-   		;; "Inconsolata"
    		;; "Atkinson Hypermono"
       )
-   (set-face-attribute 'default nil :family fnt :weight 'regular :height 140)
+   (set-face-attribute 'default nil :family fnt :weight 'regular :height 150)
 ;; overwrite mode
    (delete-selection-mode 1)
 ;; make scrolling less annoying
@@ -42,25 +41,29 @@
 ;; Themes
    (if (display-graphic-p)
    ;; Solarized
-      (progn (add-to-list 'load-path "~/.emacs.d/lisp/_themes/solarized-emacs/")
-       (require 'cl-lib)
-       (require 'color)
-       (require 'solarized-faces)
-       ;;(require 'solarized-dark-theme)
-			 (require 'solarized-light-theme)
-      )
+   ;;  (progn (add-to-list 'load-path "~/.emacs.d/lisp/_themes/solarized-emacs/")
+   ;;   (require 'cl-lib)
+   ;;   (require 'color)
+   ;;   (require 'solarized-faces)
+   ;;   ;;(require 'solarized-dark-theme)
+   ;;   (require 'solarized-light-theme)
+   ;;  )
    ;; Gruvbox
-      ;;(add-to-list 'load-path "~/.emacs.d/lisp/_themes/autothemer/")
-      ;;(add-to-list 'load-path "~/.emacs.d/lisp/_plugins/dash.el/")
-      ;;(add-to-list 'load-path "~/.emacs.d/lisp/_themes/emacs-theme-gruvbox/")
-      ;;(require 'gruvbox-theme)
-      ;;(load-theme 'gruvbox 1)
-  ;; Tomorrow
-      (progn (add-to-list 'load-path "~/.emacs.d/lisp/_themes/tomorrow/")
-        (require 'tomorrow-night-eighties-theme)
-       ;;(require 'solarized-dark-theme)
-       ;;(require 'solarized-light-theme)
-      )
+   ;;  (add-to-list 'load-path "~/.emacs.d/lisp/_themes/autothemer/")
+   ;;  (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/dash.el/")
+   ;;  (add-to-list 'load-path "~/.emacs.d/lisp/_themes/emacs-theme-gruvbox/")
+   ;;  (require 'gruvbox-theme)
+   ;;  (load-theme 'gruvbox 1)
+   ;; Tomorrow
+   ;;  (progn (add-to-list 'load-path "~/.emacs.d/lisp/_themes/tomorrow/")
+   ;;    (require 'tomorrow-night-eighties-theme)
+   ;;    (load-theme 'tomorrow-night-eighties 1)
+   ;;  )
+   ;; Dracula
+       (progn (add-to-list 'load-path "~/.emacs.d/lisp/_themes/dracula-emacs/")
+          (require 'dracula-theme)
+          (load-theme 'dracula 1)
+       )
    )
 
 ;; Multiple Cursors
@@ -161,7 +164,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-	 '("51ec7bfa54adf5fff5d466248ea6431097f5a18224788d0bd7eb1257a4f7b773" "4c56af497ddf0e30f65a7232a8ee21b3d62a8c332c6b268c81e9ea99b11da0d3" "fee7287586b17efbfda432f05539b58e86e059e78006ce9237b8732fde991b4c" "830877f4aab227556548dc0a28bf395d0abe0e3a0ab95455731c9ea5ab5fe4e1" default))
+	 '("cf08ae4c26cacce2eebff39d129ea0a21c9d7bf70ea9b945588c1c66392578d1" "51ec7bfa54adf5fff5d466248ea6431097f5a18224788d0bd7eb1257a4f7b773" "4c56af497ddf0e30f65a7232a8ee21b3d62a8c332c6b268c81e9ea99b11da0d3" "fee7287586b17efbfda432f05539b58e86e059e78006ce9237b8732fde991b4c" "830877f4aab227556548dc0a28bf395d0abe0e3a0ab95455731c9ea5ab5fe4e1" default))
  '(scroll-conservatively 1000)
  '(scroll-margin 3))
 ;; word wrap
