@@ -1,16 +1,22 @@
+; to display invislbes, M-x whitespace-mode
+; to display in hex, M-x hexl-mode 
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Add/Modify keyboard shortcuts / interaction methods
 ; Buffer Management
     (global-set-key (kbd "C-x C-b") 'ibuffer)
 ; Font
-    (setq fnt "M Plus Code Latin 60"
-        ; "M plus Code 60"
+   (setq fnt "DM Mono"
+        ; "Sono"
+        ; "PragmataPro" 
+        ; "JetBrains Mono" 
+        ; "M Plus Code Latin 60"
         ; "ProggyVector"
         ; "Spot Mono"
         ; "Input Sans"
         ; "Atkinson Hypermono"
     )
-    (set-face-attribute 'default nil :family fnt :weight 'regular :height 130)
+    (set-face-attribute 'default nil :family fnt :weight 'regular :height 140)
 ; overwrite mode
     (delete-selection-mode 1)
 ; make scrolling less annoying

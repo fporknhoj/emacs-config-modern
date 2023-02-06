@@ -73,3 +73,12 @@ ll
 git submodule add . 
 git submodule add
 multipass 
+ll
+cd Podcasts/
+ll
+sort subscribed\ podcarts.md 
+count subscribed\ podcarts.md 
+wc -l subscribed\ podcarts.md 
+cd ~
+ll
+cat brew-upgraded.txt 
