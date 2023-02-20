@@ -6,17 +6,18 @@
 ; Buffer Management
     (global-set-key (kbd "C-x C-b") 'ibuffer)
 ; Font
-   (setq fnt "DM Mono"
+   (setq fnt "Spot Mono"
+        ; "Courier Prime" 
+        ; "DM Mono"
         ; "Sono"
         ; "PragmataPro" 
         ; "JetBrains Mono" 
         ; "M Plus Code Latin 60"
         ; "ProggyVector"
-        ; "Spot Mono"
         ; "Input Sans"
         ; "Atkinson Hypermono"
     )
-    (set-face-attribute 'default nil :family fnt :weight 'regular :height 140)
+    (set-face-attribute 'default nil :family fnt :weight 'regular :height 150)
 ; overwrite mode
     (delete-selection-mode 1)
 ; make scrolling less annoying
