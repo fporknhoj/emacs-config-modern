@@ -6,7 +6,9 @@
 ; Buffer Management
     (global-set-key (kbd "C-x C-b") 'ibuffer)
 ; Font
-   (setq fnt "Spot Mono"
+   (setq fnt "Everson Mono" 
+        ; "Input Mono" 
+        ; "Spot Mono"
         ; "Courier Prime" 
         ; "DM Mono"
         ; "Sono"
