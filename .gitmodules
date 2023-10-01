@@ -28,3 +28,6 @@
 [submodule "lisp/_plugins/enhanced-ruby-mode"]
 	path = lisp/_plugins/enhanced-ruby-mode
 	url = https://github.com/zenspider/enhanced-ruby-mode
+[submodule "lisp/_plugins/csv-mode"]
+	path = lisp/_plugins/csv-mode
+	url = /Users/john/.emacs.d/lisp/_plugins/csv-mode/
