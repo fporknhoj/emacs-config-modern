@@ -1,25 +1,28 @@
 ; to display invislbes, M-x whitespace-mode
 ; to display in hex, M-x hexl-mode 
 
+; Save Sessions?
+(desktop-save-mode 1)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Add/Modify keyboard shortcuts / interaction methods
 ; Buffer Management
     (global-set-key (kbd "C-x C-b") 'ibuffer)
 ; Font
-   (setq fnt "Everson Mono" 
+   (setq fnt "SF Mono"
         ; "Input Mono" 
-        ; "Spot Mono"
-        ; "Courier Prime" 
-        ; "DM Mono"
+        ;"M+ 1mn" 
+        ;"Chivo Mono"
+        ; "BPMono"
+        ; "Everson Mono" 
+        ; "Azeret Mono"
         ; "Sono"
-        ; "PragmataPro" 
-        ; "JetBrains Mono" 
+        ; "Spot Mono"
         ; "M Plus Code Latin 60"
         ; "ProggyVector"
-        ; "Input Sans"
         ; "Atkinson Hypermono"
     )
-    (set-face-attribute 'default nil :family fnt :weight 'regular :height 150)
+    (set-face-attribute 'default nil :family fnt :weight 'regular :height 130)
 ; overwrite mode
     (delete-selection-mode 1)
 ; make scrolling less annoying
@@ -71,6 +74,11 @@
             (require 'tomorrow-night-eighties-theme)
             (load-theme 'tomorrow-night-eighties 1)
         )
+       ; (progn (add-to-list 'load-path "~/.emacs.d/lisp/_themes/tomorrow/")
+       ;     (require 'tomorrow-day-theme)
+       ;     (load-theme 'tomorrow-day 1)
+       ; )
+
        ; Dracula
        ; (progn (add-to-list 'load-path "~/.emacs.d/lisp/_themes/dracula-emacs/")
        ;          (require 'dracula-theme)
@@ -161,10 +169,16 @@
 
 ;; enhanced ruby mode
     (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/enhanced-ruby-mode/")
+
 ;; must be added after any path containing old ruby-mode
     (autoload 'enh-ruby-mode "enh-ruby-mode" "Major mode for ruby files" t)
     (add-to-list 'auto-mode-alist '("\\.rb\\'" . enh-ruby-mode))
     (add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode))
+
+;; csv mode
+    (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/csv-mode/")
+    (require 'csv-mode) 
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; end

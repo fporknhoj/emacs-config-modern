@@ -2,18 +2,42 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Mon Dec 27 16:08:16 2021
+;; Created Sat Sep 30 21:06:51 2023
 ;; Desktop file format version 208
-;; Emacs version 27.2
+;; Emacs version 29.1
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (25034 14672 801260 0) (desktop . "208") "john@RMBP.local" nil nil ((((minibuffer . t) (tty-type . "xterm-256color") (tty . "/dev/tty") (display-type . color) (background-mode . light) (cursor-color . "black") (menu-bar-lines . 0) (foreground-color . "unspecified-fg") (background-color . "unspecified-bg") (font . "tty") (height . 25) (width . 148) (modeline . t) (unsplittable) (tab-bar-lines . 0) (frameset--id . "C56A-C092-02DA-5E33") (frameset--mini t)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 2) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 4) (min-pixel-width . 10) (min-pixel-height-ignore . 2) (min-pixel-width-ignore . 2) (min-pixel-height-safe . 1) (min-pixel-width-safe . 2)) leaf (pixel-width . 148) (pixel-height . 24) (total-width . 148) (total-height . 24) (normal-height . 1.0) (normal-width . 1.0) (buffer "*scratch*" (selected . t) (hscroll . 0) (fringes 0 0 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 313) (start . 1)) (prev-buffers ("*Ibuffer*" 1 149) ("*scratch*" 1 146) ("*Backtrace*" 1 1))))])
+(setq desktop-saved-frameset [frameset 1 (25880 54331 15377 0) (desktop . "208") "john@m1p14.local" nil nil ((((minibuffer . t) (fontsize . 0) (font . "-*-SF Mono-regular-normal-normal-*-13-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (child-frame-border-width) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#cccccc") (background-color . "#2d2d2d") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (ns-appearance) (ns-transparent-titlebar) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 0) (tab-bar-lines . 0) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (scroll-bar-height . 15) (alpha) (alpha-background) (fullscreen) (scroll-bar-foreground) (scroll-bar-background) (display-type . color) (background-mode . dark) (cursor-color . "#f2777a") (font-parameter) (environment) (border-color . "#393939") (modeline . t) (unsplittable) (frameset--id . "C56A-C092-02DA-5E33") (frameset--mini t . t) (display . "m1p14.local") (visibility . t) (last-focus-update . t) (icon-name) (explicit-name) (tool-bar-position . top) (height . 50) (width . 123) (left . 1288) (top . 510)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 60) (min-pixel-width . 80) (min-pixel-height-ignore . 30) (min-pixel-width-ignore . 32) (min-pixel-height-safe . 15) (min-pixel-width-safe . 16)) leaf (pixel-width . 1000) (pixel-height . 735) (total-width . 125) (total-height . 49) (normal-height . 1.0) (normal-width . 1.0) (buffer "wags-notes.txt" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins nil) (scroll-bars nil 0 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 1026) (start . 1)) (prev-buffers ("init.el" 5959 6481) ("wags-notes.txt" 1 59) ("*Ibuffer*" 1 1) ("*scratch*" 1 1))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring '(#("psu.eud" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("if exists friendly" 0 18 (isearch-case-fold-search t isearch-regexp-function nil)) #("friendly" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("virtual_table_id" 0 16 (isearch-regexp-function nil isearch-case-fold-search t)) #("xref" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("virtual_table " 0 14 (isearch-case-fold-search t isearch-regexp-function nil)) #("virtual table" 0 13 (isearch-case-fold-search t isearch-regexp-function nil))))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("~/podman-x-ssh/Containerfile-ssh" "/Users/john/Library/LaunchAgents/org.necho.brew-update.plist" "~/.emacs.d/init.el" "~/Documents/Code/py-reddit/" "/Users/john/work-cnvr/Projects/CSF/csf-valid/csf-valid.py" "'/Users/john/work-cnvr/Projects/CSF/csf-valid/csf-valid.py'" "~/.config/fish/config.fish" "~/podman-x-ssh/Containerfile" "~/podman-x-ssh/Containerfile-ssh" "~/.emacs.d/init.el" "~/podman-x-ssh/" "~/.emacs.d/init.el" "~/.emacs.d/" "~/octave-1.octave" "~/work-cnvr/SQL/DRM-io-to-virtual-table.sql" "~/.emacs.d/init.el" "~/visible-helen-chat-1.txt" "~/work-cnvr/SQL/pa-cand-jk.sql" "~/work-cnvr/" "~/.emacs.d/init.el"))
+(setq file-name-history '("~/.emacs.d/init.el" "~/new.txt" "~/podman-x-ssh/Containerfile-ssh" "/Users/john/Library/LaunchAgents/org.necho.brew-update.plist" "~/.emacs.d/init.el" "~/Documents/Code/py-reddit/" "/Users/john/work-cnvr/Projects/CSF/csf-valid/csf-valid.py" "'/Users/john/work-cnvr/Projects/CSF/csf-valid/csf-valid.py'" "~/.config/fish/config.fish" "~/podman-x-ssh/Containerfile" "~/podman-x-ssh/Containerfile-ssh" "~/.emacs.d/init.el" "~/podman-x-ssh/" "~/.emacs.d/init.el" "~/.emacs.d/" "~/octave-1.octave" "~/work-cnvr/SQL/DRM-io-to-virtual-table.sql" "~/.emacs.d/init.el" "~/visible-helen-chat-1.txt" "~/work-cnvr/SQL/pa-cand-jk.sql" "~/work-cnvr/" "~/.emacs.d/init.el"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/Users/john/new.txt"
+  "wags-notes.txt"
+  'csv-mode
+  '(font-lock-mode centered-cursor-mode)
+  1026
+  '(59 nil)
+  nil
+  nil
+  '((buffer-display-time 25880 54318 107895 0) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t))
+  '((mark-ring (674 1 1 1 1 1 674 1026))))
+
+(desktop-create-buffer 208
+  "/Users/john/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(centered-cursor-mode eldoc-mode font-lock-mode)
+  6481
+  '(6391 nil)
+  nil
+  nil
+  '((buffer-display-time 25880 53996 10163 0) (buffer-file-coding-system . prefer-utf-8-unix))
+  '((mark-ring (6035 6408 6482 6456))))
+
