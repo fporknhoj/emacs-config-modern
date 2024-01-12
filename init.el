@@ -1,6 +1,9 @@
 ; to display invislbes, M-x whitespace-mode
 ; to display in hex, M-x hexl-mode 
 
+;; fix tab bullshit
+(setq-default indent-tabs-mode nil)
+
 ; Save Sessions?
 (desktop-save-mode 1)
 
@@ -9,15 +12,17 @@
 ; Buffer Management
     (global-set-key (kbd "C-x C-b") 'ibuffer)
 ; Font
-   (setq fnt "SF Mono"
+   (setq fnt "Spot Mono"
+        ; "Geist Mono" 
+        ; "Monaco" 
+        ; "SF Mono"
         ; "Input Mono" 
-        ;"M+ 1mn" 
-        ;"Chivo Mono"
+        ; "M+ 1mn" 
+        ; "Chivo Mono"
         ; "BPMono"
         ; "Everson Mono" 
         ; "Azeret Mono"
         ; "Sono"
-        ; "Spot Mono"
         ; "M Plus Code Latin 60"
         ; "ProggyVector"
         ; "Atkinson Hypermono"
@@ -179,6 +184,28 @@
     (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/csv-mode/")
     (require 'csv-mode) 
 
+;; reformatter mode
+    (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/emacs-reformatter/")
+    (require 'reformatter) 
+
+;; sqlformat mode
+    (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/sqlformat/")
+    (require 'sqlformat) 
+
+;; auto save mode
+    (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/auto-save/")
+    (require 'auto-save) 
+    (setq auto-save-silent t)   ; quietly save
+    (setq auto-save-delete-trailing-whitespace t)
+
+;; popup el 
+    (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/popup-el/")
+
+;; auto save mode
+    (add-to-list 'load-path "~/.emacs.d/lisp/_plugins/auto-complete/")
+    (require 'auto-complete) 
+(auto-complete-mode 1)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; end
@@ -190,7 +217,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-	 '("cf08ae4c26cacce2eebff39d129ea0a21c9d7bf70ea9b945588c1c66392578d1" "51ec7bfa54adf5fff5d466248ea6431097f5a18224788d0bd7eb1257a4f7b773" "4c56af497ddf0e30f65a7232a8ee21b3d62a8c332c6b268c81e9ea99b11da0d3" "fee7287586b17efbfda432f05539b58e86e059e78006ce9237b8732fde991b4c" "830877f4aab227556548dc0a28bf395d0abe0e3a0ab95455731c9ea5ab5fe4e1" default))
+   '("cf08ae4c26cacce2eebff39d129ea0a21c9d7bf70ea9b945588c1c66392578d1" "51ec7bfa54adf5fff5d466248ea6431097f5a18224788d0bd7eb1257a4f7b773" "4c56af497ddf0e30f65a7232a8ee21b3d62a8c332c6b268c81e9ea99b11da0d3" "fee7287586b17efbfda432f05539b58e86e059e78006ce9237b8732fde991b4c" "830877f4aab227556548dc0a28bf395d0abe0e3a0ab95455731c9ea5ab5fe4e1" default))
+ '(package-selected-packages '(markdown-mode exec-path-from-shell))
  '(scroll-conservatively 1000)
  '(scroll-margin 3))
 ;; word wrap

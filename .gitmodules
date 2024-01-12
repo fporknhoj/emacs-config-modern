@@ -31,3 +31,15 @@
 [submodule "lisp/_plugins/csv-mode"]
 	path = lisp/_plugins/csv-mode
 	url = /Users/john/.emacs.d/lisp/_plugins/csv-mode/
+[submodule "lisp/_plugins/emacs-reformatter"]
+	path = lisp/_plugins/emacs-reformatter
+	url = /Users/john/.emacs.d/lisp/_plugins/emacs-reformatter/
+[submodule "lisp/_plugins/auto-save"]
+	path = lisp/_plugins/auto-save
+	url = /Users/john/.emacs.d/lisp/_plugins/auto-save/
+[submodule "lisp/_plugins/auto-complete"]
+	path = lisp/_plugins/auto-complete
+	url = /Users/john/.emacs.d/lisp/_plugins/auto-complete/
+[submodule "lisp/_plugins/popup-el"]
+	path = lisp/_plugins/popup-el
+	url = /Users/john/.emacs.d/lisp/_plugins/popup-el/
