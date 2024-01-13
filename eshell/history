@@ -82,3 +82,15 @@ wc -l subscribed\ podcarts.md
 cd ~
 ll
 cat brew-upgraded.txt 
+cd ~/.emacs.d/
+ls
+ll
+cd lisp
+ls
+cd _plugins/
+ls
+ll
+git clone https://github.com/defunkt/markdown-mode
+ll
+cd markdown-mode/
+ll

@@ -3,8 +3,6 @@
 /Users/john/Downloads
 /
 /Users/john/Downloads
-/Users/john/.emacs.d
-/Users/john/.emacs.d/lisp
 /Users/john/.emacs.d/lisp/_themes/emacs-theme-gruvbox
 ~/.emacs.d/lisp/_plugins/ssh-el
 /Users/john
@@ -15,3 +13,8 @@
 /Users/john/Desktop
 /Users/john/Desktop/Podcasts
 /Users/john
+/Users/john/Archive/work-cnvr/Git Notes/Settings/Wave 3
+/Users/john/.emacs.d
+/Users/john/.emacs.d/lisp
+/Users/john/.emacs.d/lisp/_plugins
+/Users/john/.emacs.d/lisp/_plugins/markdown-mode

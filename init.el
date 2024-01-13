@@ -2,10 +2,35 @@
 ; to display in hex, M-x hexl-mode 
 
 ;; fix tab bullshit
-(setq-default indent-tabs-mode nil)
+(setq-default indent-tabs-mode 0)
+(when (fboundp 'electric-indent-mode) (electric-indent-mode -1))
 
 ; Save Sessions?
 (desktop-save-mode 1)
+
+;; package shit 
+;revents package list refreshing every time you start emacs if you want that 
+	;(when (not package-archive-contents)
+	;    (package-refresh-contents))
+
+; use the melpa archive for packages
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.org/packages/"))
+(add-to-list 'package-archives
+             '("org" . "http://orgmode.org/elpa/"))
+
+	;(setq package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
+	;(("ELPA" . "http://tromey.com/elpa/") 
+	; ("gnu" . "http://elpa.gnu.org/packages/")
+	; ("marmalade" . "http://marmalade-repo.org/packages/")))
+
+; Apparently needed for the package auto-complete (why?)
+;the below doeesn't work..
+;(add-to-list 'package-archives)
+;(setq package-enable-at-startup nil) 
+;(package-initialize 1)
+;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Add/Modify keyboard shortcuts / interaction methods
